@@ -1,0 +1,63 @@
+*{padding: 0; margin:0; box-sizing: border-box;}
+main, header, article, div, section{border: 1px solid lightslategrey;}
+nav a{  font-weight: bold; text-decoration: none; color: #ffcc66; text-align: center; background-color: #339900; padding: 5px; display: inline-block; width: 150px;}
+#aktiv{color: #ffff33; background-color: #66cc00;}
+#aktiv:hover{color: #ff3300; background-color: #66cc00;}
+article div {
+    text-align: center;
+    color: lightblue;
+}
+main h1{ padding: 10px; color: #339900;}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 155px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+}
+
+#elso_oldal
+article div:nth-child(1){
+    grid-area: 4/4}
+    
+article div:nth-child(2){
+    grid-area: 2/1}
+    
+article div:nth-child(3){
+    grid-area: 2/2}
+    
+article div:nth-child(4){
+    grid-area: 1/1}
+    
+article div:nth-child(5){
+    grid-area: 2/3}
+    
+article div:nth-child(6){
+    grid-area: 1/2}
+    
+article div:nth-child(7){
+    grid-area: 3/3}
+    
+article div:nth-child(8){
+    grid-area: 3/2}
+    
+article div:nth-child(9){
+    grid-area: 2/4}
+    
+article div:nth-child(10){
+    grid-area: 3/1}
+
+#masodik_oldal
+.masodik div:nth-child(6){
+    grid-column:2 / span 4;
+    grid-row: 1 /2;
+}
